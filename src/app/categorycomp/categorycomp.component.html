@@ -1,9 +1,43 @@
-<div>
-  <ul class = "list">
-  <li><a href = "">Collections</a></li>
-  <li><a href = "">Categories</a></li>
-  <li><a href = "">Price</a></li>
-  <li><a href = "">Size</a></li>
-  <li><a href = "">Color</a></li>
-  </ul>
+<div class ="col-sm-3">
+  <hr>
+  <h4>Collection</h4>
+  <div class="dropdown">
+    <a (click)="func1()">+Category</a>
+  </div>
+  <div id="drop1" class="dropdown-content">
+    <ul>
+      <li><a class="category" (click)="filter('Category','Dress')">Dress</a></li>
+      <li><a class="category" (click)="filter('Category','Kurta')">Kurta</a></li>
+      <li><a class="category" (click)="filter('Category','Pyjama')">Pyjama</a></li>
+      <li><a class="category" (click)="filter('Category','Sari')">Sari</a></li>
+      <li><a class="category" (click)="filter('Category','Top')">Top</a></li>
+    </ul>
+
+  </div>
+  <hr>
+  <div class="dropdown">
+    <a (click)="func2()">+Size</a>
+  </div>
+  <div id="drop2" class="dropdown-content">
+    <ul>
+      <li><a class="size" (click)="filter('Size','S')">S</a></li>
+      <li><a class="size" (click)="filter('Size','M')">M</a></li>
+      <li><a class="size" (click)="filter('Size','L')">L</a></li>
+      <li><a class="size" (click)="filter('Size','XL')">XL</a></li>
+    </ul>
+
+  </div>
+  <hr>
+  <div class="dropdown">
+    <a (click)="func3()">+Color</a>
+  </div>
+  <div id="drop3" class="dropdown-content">
+    <ul>
+      <li><a class="color" (click)="filter('color','Red')">Red</a></li>
+      <li><a class="color" (click)="filter('color','Blue')">Blue</a></li>
+      <li><a class="color" (click)="filter('color','White')">White</a></li>
+      <li><a class="color" (click)="filter('color','Pink')">Pink</a></li>
+    </ul>
+
+  </div>
 </div>

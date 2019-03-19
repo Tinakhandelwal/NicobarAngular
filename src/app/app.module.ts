@@ -8,6 +8,7 @@ import { HeocompComponent } from './heocomp/heocomp.component';
 import { BodycompComponent } from './bodycomp/bodycomp.component';
 import { CategorycompComponent } from './categorycomp/categorycomp.component';
 import { FootercompComponent } from './footercomp/footercomp.component';
+import { MyserviceService } from './myservice.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { FootercompComponent } from './footercomp/footercomp.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
